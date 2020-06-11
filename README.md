@@ -1,4 +1,4 @@
-# Projeto gulp-alura
+  # Projeto gulp-alura
 Migração do projeto do treinamento de **Gulp** da Alura para a versão **[4.0.2]**.
 
 ## O que foi feito
@@ -36,20 +36,9 @@ Para execução das tarefas em sequencial foi utilizado a função ***series*** 
 ```javascript
 series(clear, copy, parallel(compressImages, series(purgeCSS, minify, parallel(removeCSSNotMinify, removeJSNotMinify))))
 ```
-**Gráfico de execução**:
-```mermaid
-graph LR
-start((start)) --> A(copy)
-A(clear) --> B(copy)
-B --> C(compressImages)
-B --> D(purgeCSS)
-D --> E(minify)
-E --> F(removeCSSNotMinify)
-E --> G(removeJSNotMinify)
-F --> finish
-G --> finish
-C --> finish((finish))
-```
+**Pipeline de execução**:
+
+![Pipeline de execução](./docs/pipeline.png)
 
 ## Instalação
 Após baixar o projeto, executar a instalação dos componentes utilizando yarn:
