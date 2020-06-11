@@ -1,14 +1,13 @@
 {
   "name": "projeto",
   "version": "1.0.0",
-  "description": "",
+  "description": "Migração do Projeto do Treinamento do Gulp da Alura para a versão 4",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp server",
     "gulp": "gulp"
   },
-  "author": "",
+  "author": "Renato Viegas",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.9.8",
